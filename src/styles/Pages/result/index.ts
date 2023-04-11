@@ -20,11 +20,5 @@ export const Wrapper = styled.main`
 
 export const Chip = styled(MUIChip)`
   margin: 16px 0;
-  padding: 24px 8px;
   border-radius: 144px;
-
-  span {
-    font-size: 24px;
-    font-weight: bold;
-  }
 `

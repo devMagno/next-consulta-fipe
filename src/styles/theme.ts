@@ -26,6 +26,15 @@ export const theme = createTheme({
         table: { borderCollapse: "collapse", borderSpacing: "0" },
       },
     },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          fontSize: "24px",
+          fontWeight: "bold",
+          padding: "24px 8px",
+        },
+      },
+    },
   },
 
   typography: {
