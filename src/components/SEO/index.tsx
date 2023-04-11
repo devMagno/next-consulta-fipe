@@ -10,8 +10,8 @@ interface SEOProps {
 export function SEO({
   title,
   description = "Consulte gratuitamente o valor de um veículo na tabela Fipe! Descubra rapidamente o valor estimado do carro dos seus sonhos",
-  image,
-  url,
+  image = "og-image.png",
+  url = "https://next-consulta-fipe.vercel.app/",
 }: SEOProps) {
   return (
     <Head>
