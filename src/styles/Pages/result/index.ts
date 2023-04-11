@@ -20,5 +20,4 @@ export const Wrapper = styled.main`
 
 export const Chip = styled(MUIChip)`
   margin: 16px 0;
-  border-radius: 144px;
 `

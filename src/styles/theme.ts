@@ -32,6 +32,7 @@ export const theme = createTheme({
           fontSize: "24px",
           fontWeight: "bold",
           padding: "24px 8px",
+          borderRadius: "300px",
         },
       },
     },
