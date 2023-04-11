@@ -2,12 +2,17 @@ import Head from "next/head"
 
 interface SEOProps {
   title: string
-  description: string
-  image: string
-  url: string
+  description?: string
+  image?: string
+  url?: string
 }
 
-export function SEO({ title, description, image, url }: SEOProps) {
+export function SEO({
+  title,
+  description = "Consulte gratuitamente o valor de um veículo na tabela Fipe! Descubra rapidamente o valor estimado do carro dos seus sonhos",
+  image,
+  url,
+}: SEOProps) {
   return (
     <Head>
       {title && (
