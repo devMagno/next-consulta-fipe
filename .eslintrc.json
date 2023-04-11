@@ -50,8 +50,9 @@
               // Internal packages.
               ["^(@/components)(/.*|$)"],
               ["^(@/styles)(/.*|$)"],
-              ["^(@/types)(/.*|$)"],
               ["^(@/contexts)(/.*|$)"],
+              ["^(@/services)(/.*|$)"],
+              ["^(@/types)(/.*|$)"],
               // Side effect imports.
               ["^\\u0000"],
               // Parent imports. Put `..` last.
