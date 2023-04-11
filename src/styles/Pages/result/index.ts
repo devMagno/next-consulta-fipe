@@ -19,10 +19,12 @@ export const Wrapper = styled.main`
 `
 
 export const Chip = styled(MUIChip)`
-  font-size: 24px;
-  font-weight: bold;
-
   margin: 16px 0;
   padding: 24px 8px;
   border-radius: 144px;
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+  }
 `
