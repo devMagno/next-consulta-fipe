@@ -6,9 +6,11 @@ export const Wrapper = styled.main`
   flex-direction: column;
   justify-content: center;
 
+  width: 100%;
   height: 100%;
   max-width: 520px;
   min-height: 100vh;
+  text-align: center;
 
   padding: 8px;
   margin: 0 auto;
@@ -37,13 +39,13 @@ export const Button = styled.button`
   flex-direction: column;
   justify-content: center;
 
-  width: 260px;
+  width: 100%;
   height: 244px;
+  max-width: 260px;
 
   border-radius: 64px;
-  border: 4px solid #e5e5e5;
-
   background-color: white;
+  border: 4px solid #e5e5e5;
 
   transition: all 0.2s;
 

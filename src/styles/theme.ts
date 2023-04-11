@@ -38,8 +38,8 @@ export const theme = createTheme({
       dark: "#4c1d95",
     },
     success: {
+      light: "#dcf5f2",
       main: "#00a38c",
-      dark: "#064e3b",
     },
   },
 

@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import { Card } from "@/components/Card"
 import { SEO } from "@/components/SEO"
 
-import { Fieldset, Form, Wrapper } from "@/styles/Home"
+import { Fieldset, Form, Wrapper } from "@/styles/Pages/home"
 
 import { useFipe } from "@/hooks/useFipe"
 

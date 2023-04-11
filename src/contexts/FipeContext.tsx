@@ -12,7 +12,10 @@ import { api } from "@/services/api"
 
 import { ApiError } from "@/types/ApiError"
 import { Brand } from "@/types/Brand"
-import { CarSpecification } from "@/types/CarSpecification"
+import {
+  CarSpecification,
+  CarSpecificationResponse,
+} from "@/types/CarSpecification"
 import { Model } from "@/types/Model"
 import { Year } from "@/types/Year"
 
@@ -161,11 +164,16 @@ export function FipeProvider({ children }: FipeProviderProps) {
     try {
       setIsCarPriceLoading(true)
 
-      const { data } = await api.get<CarSpecification>(
+      const { data } = await api.get<CarSpecificationResponse>(
         `${selectedBrand?.codigo}/modelos/${selectedModel?.codigo}/anos/${selectedYear.codigo}`
       )
 
-      setSelectedCarSpecification(data)
+      setSelectedCarSpecification({
+        brand: data.Marca,
+        model: data.Modelo,
+        year: data.AnoModelo,
+        value: data.Valor,
+      })
 
       return true
     } catch (error) {

@@ -10,10 +10,10 @@ export const Wrapper = styled(Paper)`
   width: 100%;
   max-width: 480px;
 
-  padding: 16px 28px;
+  padding: 24px 28px 16px 28px;
   margin-top: 16px auto 0;
 
   @media screen and (min-width: 700px) {
-    padding: 24px 56px;
+    padding: 32px 56px 24px 56px;
   }
 `
